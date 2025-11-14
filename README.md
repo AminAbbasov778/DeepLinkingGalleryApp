@@ -10,7 +10,7 @@ It’s built with **Kotlin, Jetpack Compose, Navigation, and Clean Architecture 
 
 | Gif |
 |-------------|
-| <img src="gif/DeepLinkingGalleryApp (online-video-cutter.com).gif" width="200"> |
+| <img src=DeepLinkingGalleryApp (online-video-cutter.com).gif" width="200"> |
 
 ---
 
@@ -46,4 +46,5 @@ It’s built with **Kotlin, Jetpack Compose, Navigation, and Clean Architecture 
 3. **Deep Link Format:**  
    ```text
    deeplinkinggalleryapp://images/details?id={imageId}
+
 
