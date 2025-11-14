@@ -1,59 +1,48 @@
-DeepLinkingGalleryApp (Android Deep Linking Demo + Compose + Navigation)
+# 🖼 DeepLinkingGalleryApp (Android Deep Linking Demo + Compose + Navigation)
 
-DeepLinkingGalleryApp is a small Android demo app that demonstrates deep linking in Jetpack Compose. Users can click an image in a “Sender App” and open the Gallery app directly on a specific image detail screen.
+**DeepLinkingGalleryApp** is a small Android demo app that demonstrates **deep linking** in Jetpack Compose. Users can click an image in a “Sender App” and open the Gallery app directly on a **specific image detail screen**.
 
-It’s built with Kotlin, Jetpack Compose, Navigation.
+It’s built with **Kotlin, Jetpack Compose, Navigation, and Clean Architecture principles**.
 
-📸 Screenshots
-Home Screen	Detail Screen
-<img src="screenshots/home.png" width="200">	<img src="screenshots/detail.png" width="200">
-📱 Features
+---
 
-Deep Linking: Open a specific image directly using a URL like:
-deeplinkinggalleryapp://images/details?id=1
+## 📸 Screenshots
 
-Navigation: HomeScreen → DetailScreen using Jetpack Compose Navigation.
+| Home Screen | Detail Screen |
+|-------------|---------------|
+| <img src="screenshots/home.png" width="200"> | <img src="screenshots/detail.png" width="200"> |
 
-Animated Transitions: Smooth fadeIn / fadeOut / slide animations between screens.
+---
 
-Sample Data: Static image list using sampleImages utility object.
+## 📱 Features
 
-Clean Architecture: Separation of presentation, navigation, and utils.
+- **Deep Linking:** Open a specific image directly using a URL like:  
+  `deeplinkinggalleryapp://images/details?id=1`
+- **Navigation:** `HomeScreen` → `DetailScreen` using Jetpack Compose Navigation.
+- **Animated Transitions:** Smooth `fadeIn` / `fadeOut` / `slide` animations between screens.
+- **Sample Data:** Static image list using `sampleImages` utility object.
+- **Clean Architecture:** Separation of `presentation`, `navigation`, and `utils`.
 
-🧩 Tech Stack
-Technology	Purpose
-Kotlin	Core language
-Jetpack Compose	UI
-Navigation Compose	Screen navigation
-Kotlin Coroutines	Asynchronous tasks
-Clean Architecture	Organized project structure
-Hilt (optional)	Dependency injection
-Room (optional)	Offline storage of images (future)
-⚡ Usage
+---
 
-Install Sender App → Click button to send deep link.
+## 🧩 Tech Stack
 
-Install Gallery App → Receives deep link and navigates to correct image detail.
+| Technology | Purpose |
+|------------|---------|
+| Kotlin | Core language |
+| Jetpack Compose | UI |
+| Navigation Compose | Screen navigation |
+| Kotlin Coroutines | Asynchronous tasks |
+| Clean Architecture | Organized project structure |
+| Hilt (optional) | Dependency injection |
+| Room (optional) | Offline storage of images (future) |
 
-Deep Link Format:
+---
 
-deeplinkinggalleryapp://images/details?id={imageId}
+## ⚡ Usage
 
-🏗 Project Structure
-com.example.DeepLinkingGalleryApp
-├── MainActivity.kt
-├── presentation
-│   ├── home
-│   │   └── HomeScreen.kt
-│   ├── detail
-│   │   └── DetailScreen.kt
-│   └── navigation
-│       └── NavGraph.kt
-└── utils
-    └── Utils.kt
-
-🔧 Setup
-git clone <repo_url>
-Open in Android Studio
-Build and Run
-Click the Sender App button to test deep link
+1. **Install Sender App** → Click button to send deep link.  
+2. **Install Gallery App** → Receives deep link and navigates to correct image detail.  
+3. **Deep Link Format:**  
+   ```text
+   deeplinkinggalleryapp://images/details?id={imageId}
